@@ -4,6 +4,8 @@ using namespace std;
 //1.1 Передача аргументов по значению,работаем с копиями, кот записаны в локальные переменные формальных параметров
 void PassingByValue(int a, int b)////////коли не має потреби змінювати значення оригіналів
 {
+	a = 100;
+	b = 100;
 	int temp = a;
 	a = b;
 	b = temp;
@@ -23,6 +25,8 @@ void PassingByPointer(int*  a, int* b)/////swap()  PassingByPointer(&n1,&n2);
 //2.1 Передача аргументов по ссылке,работаем с оригиналом
 void PassingByRef(int& a, int& b)//PassingByRef(n1, n2);
 {
+	a = 99;
+	b = 99;
 	int temp = a;
 	a = b;
 	b = temp;
